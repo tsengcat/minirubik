@@ -4,7 +4,7 @@ buf:
 .text
 main:
     la   t0, buf
-    li   t1, 256000    #total 2.5MiB
+    li   t1, 256000    #total 2.5kiB
     add  t1, t0, t1
     li   t2, 0x12345678
 loop:
