@@ -15,7 +15,6 @@ All measurements in this note were taken on the single machine described below. 
 | Ripes ISA setting | RV32I only (the CLI default, with no extensions enabled) |
 | minirubik fork | `tsengcat/minirubik`, forked from `sysprog21/minirubik` at commit `231796c` |
 
-**Power state.** Every test in this note, including the memory measurement and the instruction-rate measurement, was run in this same environment: on battery power with macOS Low Power Mode turned on, and not connected to a charger. The aim was a stable environment that stays the same across all runs, not the best performance the machine can reach.
 
 ## 1. What the program computes
 
