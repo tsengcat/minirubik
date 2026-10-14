@@ -4,4 +4,10 @@
 solver
 mini
 Ripes*
-host/stage2_probe
+host/ida_draft/ida_test
+host/ida_draft/emit_tables
+host/oracle/gen_tables
+host/verify/verify_tables
+host/search/search
+host/oracle/ida
+host/verify/verify_search
