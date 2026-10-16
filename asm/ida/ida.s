@@ -197,6 +197,7 @@ read_state:
 
     #clear reg
     addi    x12 x0  0
+    jal     x1  render_init     # 只在 GUI build：畫出初始狀態 #RENDER
 # ---------------------------------------------------------------------------
 # 2. solve (ida.c:161)                                               TODO
 #   輸入：x8 = p、x9 = o
@@ -404,6 +405,7 @@ check_turn:
     lhu     x9  0(x29)          # o = ori_row[face][o]
     addi    x28 x28 -1
     bge     x28 x0  check_turn
+    jal     x1  render_move     # 只在 GUI build：這一步轉完，重畫 LED #RENDER
     addi    x24 x24 8
     bne     x24 x25 check_move
 check_end:
